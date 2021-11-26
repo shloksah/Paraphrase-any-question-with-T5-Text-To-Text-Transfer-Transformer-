@@ -1,3 +1,20 @@
-torch==1.4.0
-transformers==2.9.0
-pytorch_lightning==0.7.5
+!pip install torch
+!pip install transformers
+!pip install pytorch_lightning==0.7.5 (important to run this specific version)
+
+conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
+salloc --nodes=1 --ntasks-per-node=28 --gpus-per-node=1 -A PAS2062 --time 1:0:0
+module load miniconda3
+module load cuda
+pip install pytorch_lightning
+transformers
+pandas
+nltk
+pip install sentencepiece
+ssh o0686
+numpy: No module named 'numpy'
+pytz: No module named 'pytz'
+dateutil: No module named 'dateutil'
+
+
+cd /fs/ess/scratch/PAS2062/Paraphrase-any-question-with-T5-Text-To-Text-Transfer-Transformer-
